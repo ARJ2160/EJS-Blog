@@ -44,6 +44,10 @@ app.get('/contact', (req,res) => {
     contactPlaceholder: contactContent})
 });
 
+app.get('/compose', (req,res) => {
+  res.render("compose", {});
+})
+
 //ROUTING PROTOCOL FOR COMPOSE PAGE
 app.post('/compose', (req,res) => {
   const postContent = {
